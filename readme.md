@@ -7,4 +7,4 @@ This is how it looks like:
 
 ![screenshot](screenshot.jpg)
 
-# sample title
+# Check it out for issues
