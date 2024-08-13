@@ -4,14 +4,17 @@ Lets create a complete Login form design with Login, Sign up animations and basi
 
 ## Branches dev1, dev2, dev3 and Joint
 These Branches contain the same changes and look as follow:
+>
 ![screenshot](pics/screenshot1.png)
 
 ## Branch Testing
 Some errors related to the toggle section and responsiveness of the utility were fixed in this branch:
+>
 ![screenshot](pics/screenshot2.png)
 
 ## Branches QA and Main
 There will be always an opportunity to improve the final outcome by applying different styles as happened in these two merged branches making its appearance more engaging:
+>
 ![screenshot](pics/screenshot3.png)
 
   
@@ -111,7 +114,31 @@ Put your code here exactly as it is.
 ```
 > Use this text block to describe **relevant facts**, features or functions of your CSS code section that you consider will be useful in understanding **_how the style was applied_** and its relationship with the HTML code. You **highlight** some parts of this text to **improve its readability**.
 ***
-  
+
+ 
+>
+##  JS File
+
+###  Code:
+
+-  **Code _section_ title 6(grouped)**
+>
+```js
+Put your code here.
+```
+> Use this text block 1 to describe _relevant facts_.
+>
+```js
+Put your code here.
+```
+> Use this text block 2 to describe _relevant facts_.
+>
+```js
+Put your code here.
+```
+> Use this text block 3 to describe _relevant facts_.
+>
+
 
 ![reading...](https://media.giphy.com/media/Tf3mp01bfrrUc/giphy.gif?cid=ecf05e47wajghtrc5targr7mju7coe0avdyurnehrr1krgdt&ep=v1_gifs_search&rid=giphy.gif&ct=g  "...How could I ever do so unless someone guide me?")
 
