@@ -28,6 +28,7 @@ The login form structured in this practice is composed mainly of three  containe
 
 ###  Code:
 We start by defining a main div tag with the class _**container**_ under which all the elements will be placed.
+
 As mentioned in the summary we continue by defining the classes **_form-container sign-up_**, **_form-container sign-in_** and the **_toggle-container_**  one.
 
 - **_form-container sign-up_**
