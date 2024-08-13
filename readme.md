@@ -36,6 +36,7 @@ As mentioned in the summary we continue by defining the classes **_form-containe
 - **_toggle-container_**
 > To recreate the animated effect we placed a big toggle in front of the forms with the class **_toggle_** which is divided itself in two parts, the **_toggle-panel toggle-left_** and the **_toggle-panel toggle-right_** classes, both of them following the same structure; a title using the **_h1_** tag, a brief text using the **_p_** tag and a **_button_** with same class **_hidden_** that will allows us to make some effects possible through the style code and the script.
  
+>
 ##  CSS File
 
 ###  Code:
