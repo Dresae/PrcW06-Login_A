@@ -45,28 +45,30 @@ As mentioned in the summary we continue by defining the classes **_form-containe
 
 ###  Code:
 
--  **Code _section_ title 1**
+-  **Importing Google family font**
 >
 ```css
-Put your code here.
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 ```
-> Use this text block to describe **relevant facts**, features or functions of your CSS code section that you consider will be useful in understanding **how the style was applied** and its relationship with the HTML code. You **highlight** some parts of this text to **improve its readability**.
+>This line imports the Poppins font from Google Fonts. The **@import** rule is used to include external stylesheets. In this case, the stylesheet is hosted on Google Fonts and the font being imported is Poppins with different weights (300, 400, 500, 600). The **url() function** is used to specify the location of the external stylesheet. 
 ***
 
--  **Code _section_ title 2**
+-  **Global styles using the _asterisc_ * selector**
 >
 ```css
-Put your code here exactly as it is.
+*{
+}
 ```
-> Use this text block to describe **relevant facts**, features or functions of your CSS code section that you consider will be useful in understanding **_how the style was applied_** and its relationship with the HTML code. You **highlight** some parts of this text to **improve its readability**.
+> This selector targets all elements on the page and sets their margin, padding, and box-sizing properties.
 ***
 
--  **Code _section_ title 3**
+-  **The _Body_ selector**
 >
 ```css
-Put your code here exactly as it is.
+body{
+}
 ```
-> Use this text block to describe **relevant facts**, features or functions of your CSS code section that you consider will be useful in understanding **_how the style was applied_** and its relationship with the HTML code. You **highlight** some parts of this text to **improve its readability**.
+> Using the **body** element we created a full-screen background with a gradient that transitions from dark blue to dark blue-purple, and centring its content both horizontally and vertically using the flexbox layout.
 ***
 
 -  **Code _section_ title 4**
