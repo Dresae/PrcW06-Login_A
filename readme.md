@@ -123,7 +123,7 @@ body{
 container input{
 }
 ```
-> Use this text block 4 to describe _relevant facts_.
+> This code snippet styles the _**input**_ elements inside the _**main container**_. It sets the background color to a light blue (#eae1ff), removes the default border, adds some margin and padding, sets the font size to 13px, rounds the corners of the input with a border radius of 8px, makes the input take up 100% of the width of its container, and removes the default outline when the input is focused.
 ***
 ***
 -  **Styling the form**
@@ -131,13 +131,13 @@ container input{
 .form-container{
 }
 ```
-> Use this text block 4 to describe _relevant facts_.
+> This block of code styles the form container to take up the full height of its _**parent form element**_, positioning it at the top, and adding a smooth transition effect to any changes made to the element's properties.
 ***
 ```css
 .form-container form h1{
 }
 ```
-> Use this text block 4 to describe _relevant facts_.
+> Here we styles the title element inside the _**form container**_ to have a large font size, a purple color, and a vertical offset of -25 pixels, which moves it upwards from its normal position.
 ***
 ***
 -  **Styling the sign-in and sign-up**
@@ -145,36 +145,39 @@ container input{
 ```css
 .sign-in{
 }
-```
-> Use this text block 4 to describe _relevant facts_.
-***
->
-```css
+
 .container.active .sign-in{
 }
 ```
-> Use this text block 4 to describe _relevant facts_.
+> This CSS code snippet styles the element with the class _**sign-in**_ and its behavior when its parent element has the class _**active**_ .
+> Once the parent element has the class _**active**_, the _**.sign-in**_ element will be _**translated 100% to the right**_, effectively hiding it from view. 
+
+> When the parent element does not have the class _**active**_, the _**.sign-in**_ element will be positioned at the left edge of its parent element with a width of 50% and a z-index of 2.
 ***
 >
 ```css
 .sign-up{
 }
-```
-> Use this text block 4 to describe _relevant facts_.
-***
->
-```css
+
 .container.active .sign-up{
 }
 ```
-> Use this text block 4 to describe _relevant facts_.
+> Through this block of code we define a hidden _**.sign-up**_ element that will slide into view from the left when its parent container has the class _**active**_.
+>  The animation will run for 0.6 seconds, and the element will be fully visible and on top of other elements when the animation is complete.
 ***
+***
+-  **The keyframe animation**
 >
 ```css
 @keyframes move{
 }
 ```
-> Use this text block 4 to describe _relevant facts_.
+> This CSS code defines a **_keyframe_ animation** named _**move**_. The animation controls the opacity and _**z-index**_ of an element over time and this is how it works.
+
+> 1. At the start of the animation (0%), the element is fully transparent (opacity: 0) and has a low z-index (1).
+> 2.  The element remains transparent and behind other elements until just before the halfway mark (49.99%).
+> 3.  At the midpoint (50%), the element suddenly becomes fully opaque (opacity: 1) and jumps to the top of the stacking order with a higher z-index (5).
+> 4.  The element remains opaque and on top until the end of the animation (100%).
 ***
 ***
 -  **Styling the social media icons**
@@ -182,64 +185,59 @@ container input{
 ```css
 .social-icons{
 }
-```
-> Use this text block 1 to describe _relevant facts_.
->
-***
->
-```css
-social-icons a{
+
+.social-icons  a{
+}
+
+.social-icons  .icon{
+}
+
+.social-icons  .icon  .fa-brands{
 }
 ```
-> Use this text block 1 to describe _relevant facts_.
->
-***
->
-```css
-.social-icons .icon{
-}
-```
-> Use this text block 1 to describe _relevant facts_.
->
-***
->
-```css
-.social-icons .icon .fa-brands{
-}
-```
-> Use this text block 1 to describe _relevant facts_.
+> These blocks of code style a group of social media icons with a purple border, rounded shape, and centered content. The icons are displayed horizontally with some space between them, and the Font Awesome icons are sized to 25 pixels.
 ***
 ***
 -  **Applying CSS effects to our Toggle**
 ```css
-.toggle-panel{
+.toggle-container{
+}
+
+.container.active  .toggle-container{
 }
 ```
-> Use this text block 4 to describe _relevant facts_.
+> This code styles a toggle container element that can be toggled on and off by adding or removing the _**active**_ class from its parent container. When the container is active, the _**toggle container will slide out**_ of view and change its border radius to create a curved corner effect.
+***
+```css
+.toggle{
+}
+
+.container.active  .toggle{
+}
+```
+> This code creates a toggle element that _**is initially hidden to the left**_ of its parent container. When the parent container is given the class _**active**_, the toggle element _**slides to the right, revealing itself**_. The transition effect is smooth and takes 1.1 seconds to complete.
+***
+```css
+.toggle-pannel{
+}
+```
+> This code defines a class that creates a flexible container that is absolutely positioned, centered, and takes up 50% of its parent's width and 100% of its parent's height. The container has a padding of 30px on the left and right, and any text within it will be centered. The element will also have a smooth transition effect when its properties change.
 ***
 ```css
 .toggle-left{
 }
-```
-> Use this text block 4 to describe _relevant facts_.
-***
-```css
-.container.active .toggle-left{
+
+.container.active  .toggle-left{
+}
+
+.toggle-right{
+}
+
+.container.active  .toggle-right{
 }
 ```
-> Use this text block 4 to describe _relevant facts_.
-***
-```css
-toggle-right{
-}
-```
-> Use this text block 4 to describe _relevant facts_.
-***
-```css
-.container.active .toggle-right{
-}
-```
-> Use this text block 4 to describe _relevant facts_.
+> This code is used to create the slide effect, where elements with _**.toggle-left**_ and _**.toggle-right**_ classes are moved in and out of view when the container has the _**active**_ class. 
+> The _**.toggle-left**_ elements start off-screen to the left and _**move into view**_ when the container _**is active**_, while the _**.toggle-right**_ elements start on-screen at the right edge and move off-screen to the right when the container is active.
 ***
 ***
 
@@ -254,7 +252,9 @@ const container = document.getElementById('container');
 const registerBtn = document.getElementById('register');
 const loginBtn = document.getElementById('login');
 ```
-> Use this text block 1 to describe _relevant facts_.
+> This code selects three HTML elements with IDs _**container**_, _**register**_, and _**login**_, and stores them in three separate constant variables: _**container**_, _**registerBtn**_, and _**loginBtn**_.
+> 
+>  These variables are then ready to be used when manipulating these elements in the next section of code.
 ***
 ***
 - **Defining actions on click events**
@@ -263,15 +263,14 @@ const loginBtn = document.getElementById('login');
 registerBtn.addEventListener('click', () => {
     container.classList.add("active");
 });
-```
-> Use this text block 1 to describe _relevant facts_.
->
-```js
+
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
-});
 ```
-> Use this text block 1 to describe _relevant facts_.
+> This JavaScript code adds event listeners to two buttons, `registerBtn` and `loginBtn`, to toggle a CSS class `active` on a container element.
+> 
+>These action are essentials when styling of a registration form or container when the user clicks on the register or login buttons. When the register _**button is clicked**_, the _**container becomes "active"**_ (e.g., visible or highlighted), and when the _**login button is clicked**_, the _**container becomes "inactive"**_ (e.g., hidden or normal).
+
 ***
 ***
 
