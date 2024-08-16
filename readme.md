@@ -40,7 +40,7 @@ As mentioned in the summary we continue by defining the classes **_form-containe
 - **_toggle-container_**
 > To recreate the animated effect we placed a big toggle in front of the forms with the class **_toggle_** which is divided itself in two parts, the **_toggle-panel toggle-left_** and the **_toggle-panel toggle-right_** classes, both of them following the same structure; a title using the **_h1_** tag, a brief text using the **_p_** tag and a **_button_** with same class **_hidden_** that will allows us to make some effects possible through the style code and the script.
  
->
+
 ##  CSS File
 
 ###  Code:
@@ -52,7 +52,7 @@ As mentioned in the summary we continue by defining the classes **_form-containe
 ```
 >This line imports the Poppins font from Google Fonts. The **@import** rule is used to include external stylesheets. In this case, the stylesheet is hosted on Google Fonts and the font being imported is Poppins with different weights (300, 400, 500, 600). The **url() function** is used to specify the location of the external stylesheet. 
 ***
-
+***
 -  **Global styles using the _asterisc_ * selector**
 >
 ```css
@@ -61,87 +61,219 @@ As mentioned in the summary we continue by defining the classes **_form-containe
 ```
 > This selector targets all elements on the page and sets their margin, padding, and box-sizing properties.
 ***
-
+***
 -  **The _Body_ selector**
->
 ```css
 body{
 }
 ```
 > Using the **body** element we created a full-screen background with a gradient that transitions from dark blue to dark blue-purple, and centring its content both horizontally and vertically using the flexbox layout.
 ***
-
--  **Code _section_ title 4**
->
+ ***
+-  **Styling elements inside the main container**
 ```css
-Put your code here exactly as it is.
+.container{
+}
 ```
-> Use this text block to describe **relevant facts**, features or functions of your CSS code section that you consider will be useful in understanding **_how the style was applied_** and its relationship with the HTML code. You **highlight** some parts of this text to **improve its readability**.
+> This code styles the main container element with a white background, rounded corners, a drop shadow, and a fixed width and minimum height. The element will also clip any overflowing content and will not exceed the width of its parent element.
 ***
-
--  **Code _section_ title 5**
->
 ```css
-Put your code here exactly as it is.
+.container h1{
+}
 ```
-> Use this text block to describe **relevant facts**, features or functions of your CSS code section that you consider will be useful in understanding **_how the style was applied_** and its relationship with the HTML code. You **highlight** some parts of this text to **improve its readability**.
+> By using the **_h1_** tag, all the titles inside the main container class will get this style applied.
 ***
- 
--  **Code _section_ title 6(grouped)**
->
 ```css
-Put your code here.
+.container p{
+}
 ```
-> Use this text block 1 to describe _relevant facts_.
->
+> Similarly by using the **_p_** tag, all the paragraph elements inside the main container class will get this style applied.
+***
 ```css
-Put your code here.
+.container span{
+}
 ```
-> Use this text block 2 to describe _relevant facts_.
->
+> This tag selector targets any HTML  _**span**_ elements that are descendants of the elements with the class _**container**_. This is useful you want to apply a different font style to a specific section of text.
+***
 ```css
-Put your code here.
+.container a{
+}
 ```
-> Use this text block 3 to describe _relevant facts_.
->
+> This CSS rule styles anchor elements within an element with the class _**container**_ to have a dark gray color, a font size of 13 pixels, no text decoration, and a margin of 15 pixels on top, 0 pixels on the sides, and 10 pixels on the bottom.
+***
 ```css
-Put your code here.
+.container button{
+}
+```
+> This selector styles buttons inside the class _**container**_. It sets the button's background color, text color, font size, padding, border, and other visual properties to create a specific design. The _**cursor: pointer**_ property changes the mouse cursor to a pointing hand when hovering over the button, indicating it's a clickable element.
+***
+```css
+.container button.hidden{
+}
+```
+> Here we target the button element with the _**hidden**_ class, which inside the main _**container**_ class. It sets the button's background color to transparent and its border color to white (#fff), effectively giving the invisible effect to our button.
+***
+```css
+.container form{
+}
+```
+> Here we style the _**form**_ element within the _**main container**_. It sets the form's background color to white (#fff), centers its content both horizontally and vertically using _**flexbox**_, and adds _**padding**_ to the left and right sides taking up the full height of its _**parent container**_.
+***
+```css
+container input{
+}
 ```
 > Use this text block 4 to describe _relevant facts_.
 ***
-
--  **Code _section_ title 7**
+***
+-  **Styling the form**
+```css
+.form-container{
+}
+```
+> Use this text block 4 to describe _relevant facts_.
+***
+```css
+.form-container form h1{
+}
+```
+> Use this text block 4 to describe _relevant facts_.
+***
+***
+-  **Styling the sign-in and sign-up**
 >
 ```css
-Put your code here exactly as it is.
+.sign-in{
+}
 ```
-> Use this text block to describe **relevant facts**, features or functions of your CSS code section that you consider will be useful in understanding **_how the style was applied_** and its relationship with the HTML code. You **highlight** some parts of this text to **improve its readability**.
+> Use this text block 4 to describe _relevant facts_.
+***
+>
+```css
+.container.active .sign-in{
+}
+```
+> Use this text block 4 to describe _relevant facts_.
+***
+>
+```css
+.sign-up{
+}
+```
+> Use this text block 4 to describe _relevant facts_.
+***
+>
+```css
+.container.active .sign-up{
+}
+```
+> Use this text block 4 to describe _relevant facts_.
+***
+>
+```css
+@keyframes move{
+}
+```
+> Use this text block 4 to describe _relevant facts_.
+***
+***
+-  **Styling the social media icons**
+>
+```css
+.social-icons{
+}
+```
+> Use this text block 1 to describe _relevant facts_.
+>
+***
+>
+```css
+social-icons a{
+}
+```
+> Use this text block 1 to describe _relevant facts_.
+>
+***
+>
+```css
+.social-icons .icon{
+}
+```
+> Use this text block 1 to describe _relevant facts_.
+>
+***
+>
+```css
+.social-icons .icon .fa-brands{
+}
+```
+> Use this text block 1 to describe _relevant facts_.
+***
+***
+-  **Applying CSS effects to our Toggle**
+```css
+.toggle-panel{
+}
+```
+> Use this text block 4 to describe _relevant facts_.
+***
+```css
+.toggle-left{
+}
+```
+> Use this text block 4 to describe _relevant facts_.
+***
+```css
+.container.active .toggle-left{
+}
+```
+> Use this text block 4 to describe _relevant facts_.
+***
+```css
+toggle-right{
+}
+```
+> Use this text block 4 to describe _relevant facts_.
+***
+```css
+.container.active .toggle-right{
+}
+```
+> Use this text block 4 to describe _relevant facts_.
+***
 ***
 
- 
->
 ##  JS File
 
 ###  Code:
 
--  **Code _section_ title 6(grouped)**
+- **Declaring constants**
 >
 ```js
-Put your code here.
+const container = document.getElementById('container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
+```
+> Use this text block 1 to describe _relevant facts_.
+***
+***
+- **Defining actions on click events**
+>
+```js
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
+});
 ```
 > Use this text block 1 to describe _relevant facts_.
 >
 ```js
-Put your code here.
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
+});
 ```
-> Use this text block 2 to describe _relevant facts_.
->
-```js
-Put your code here.
-```
-> Use this text block 3 to describe _relevant facts_.
->
-
+> Use this text block 1 to describe _relevant facts_.
+***
+***
 
 ![reading...](https://media.giphy.com/media/Tf3mp01bfrrUc/giphy.gif?cid=ecf05e47wajghtrc5targr7mju7coe0avdyurnehrr1krgdt&ep=v1_gifs_search&rid=giphy.gif&ct=g  "...How could I ever do so unless someone guide me?")
 
