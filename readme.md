@@ -269,7 +269,7 @@ loginBtn.addEventListener('click', () => {
 ```
 > This JavaScript code adds event listeners to two buttons, `registerBtn` and `loginBtn`, to toggle a CSS class `active` on a container element.
 > 
->These action are essentials when styling of a registration form or container when the user clicks on the register or login buttons. When the register _**button is clicked**_, the _**container becomes "active"**_ (e.g., visible or highlighted), and when the _**login button is clicked**_, the _**container becomes "inactive"**_ (e.g., hidden or normal).
+>These action are essentials when styling the registration form or container when the user clicks on the register or login buttons. When the register _**button is clicked**_, the _**container becomes "active"**_ , and when the _**login button is clicked**_, the _**container becomes "inactive"**_ (e.g., hidden or normal).
 
 ***
 ***
